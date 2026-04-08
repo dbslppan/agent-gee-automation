@@ -1,0 +1,65 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 200,
+  "oob_score": 0.9993724505804832,
+  "cv_accuracy_mean": 0.9993724396313615,
+  "cv_accuracy_std": 0.0001281560555113081,
+  "feature_names": [
+    "NDVI",
+    "GNDVI",
+    "SAVI",
+    "RVI",
+    "EVI"
+  ],
+  "class_labels": {
+    "1": "Sehat",
+    "2": "Stres_Ringan",
+    "3": "Stres_Berat",
+    "4": "Kritis"
+  },
+  "thresholds_used": {
+    "Sehat": {
+      "NDVI_min": 0.65,
+      "NDVI_max": 1.0,
+      "GNDVI_min": 0.5,
+      "GNDVI_max": 1.0,
+      "SAVI_min": 0.55,
+      "SAVI_max": 1.0,
+      "RVI_min": 3.8,
+      "RVI_max": 999.0
+    },
+    "Stres_Ringan": {
+      "NDVI_min": 0.45,
+      "NDVI_max": 0.65,
+      "GNDVI_min": 0.35,
+      "GNDVI_max": 0.5,
+      "SAVI_min": 0.38,
+      "SAVI_max": 0.55,
+      "RVI_min": 2.5,
+      "RVI_max": 3.8
+    },
+    "Stres_Berat": {
+      "NDVI_min": 0.25,
+      "NDVI_max": 0.45,
+      "GNDVI_min": 0.2,
+      "GNDVI_max": 0.35,
+      "SAVI_min": 0.18,
+      "SAVI_max": 0.38,
+      "RVI_min": 1.5,
+      "RVI_max": 2.5
+    },
+    "Kritis": {
+      "NDVI_min": -1.0,
+      "NDVI_max": 0.25,
+      "GNDVI_min": -1.0,
+      "GNDVI_max": 0.2,
+      "SAVI_min": -1.0,
+      "SAVI_max": 0.18,
+      "RVI_min": 0.0,
+      "RVI_max": 1.5
+    }
+  },
+  "trained_on": "2026-04-08T10:57:28.932523",
+  "vi_tiff_source": "./GEE_LPP_MADIUN/S2_VI_Madiun_VI_Median.tif",
+  "samples_per_class": 5000
+}

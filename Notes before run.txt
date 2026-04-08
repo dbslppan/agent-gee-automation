@@ -1,0 +1,65 @@
+step 1
+Catatan penting sebelum run:
+Periode default di script adalah Juni–September 2024 (musim kemarau — cloud cover rendah, ideal untuk Jawa Timur). Kalau mau periode lain, ubah START_DATE dan END_DATE di bagian CONFIG. Untuk AOI blok kebun yang lebih presisi, ganti AOI dengan shapefile yang di-upload ke GEE Assets.
+Untuk automasi Python mingguan, edit satu baris di gee_vi_export_madiun_auto.py:
+python
+GEE_PROJECT = 'your-gee-project-id'  # ganti dengan project ID GEE kamu
+
+2. Label dan RF
+Satu hal yang perlu diubah sebelum run:
+python
+"vi_tiff_path": "./GEE_LPP_MADIUN/S2_VI_Madiun_VI_Median.tif"
+Arahkan ke path lokal dimana file GeoTIFF dari GEE sudah di-download dari Drive.
+Yang dihasilkan setelah run berhasil — semua masuk folder model_output/:
+model.pkl adalah model siap pakai untuk agent mingguan. pseudo_label_map.tif bisa dibuka di QGIS untuk validasi visual apakah label rule-based masuk akal secara spasial sebelum dipercaya. confusion_matrix.png dan feature_importance.png adalah laporan evaluasi. training_dataset.csv menyimpan semua piksel sampel untuk audit atau retrain.
+
+Tentang threshold yang dipakai:
+Nilai threshold sudah disesuaikan untuk kelapa sawit di iklim Jawa Timur musim kemarau. Yang perlu diperhatikan: RVI untuk sawit biasanya tinggi (kanopi tebal, NIR tinggi), sehingga batas RVI > 3.8 untuk kelas Sehat lebih konservatif dibanding tanaman semusim. Kalau setelah lihat pseudo_label_map.tif di QGIS ternyata terlalu banyak piksel Kritis atau terlalu sedikit Sehat, threshold bisa di-adjust di bagian THRESHOLDS sebelum retrain.
+
+pip install rasterio numpy pandas scikit-learn matplotlib seaborn joblib
+python bootstrap_labeler_rf_trainer.py
+
+Estimasi waktu: 3–10 menit tergantung ukuran TIFF Madiun dan jumlah CPU core.
+
+Setelah model.pkl ada, langkah terakhir adalah agent pipeline mingguan — script yang otomatis baca TIFF baru setiap minggu, load model.pkl, predict, colorize jadi peta kelas, lalu push ke Streamlit viewer dengan notifikasi Telegram. Lanjut ke sana?
+
+3. viewer + notifikasi
+
+Struktur folder yang terbentuk setelah semua script berjalan:
+project/
+├── GEE_LPP_MADIUN/              ← sync dari Google Drive
+│   └── S2_VI_Madiun_VI_*.tif
+├── model_output/                ← hasil bootstrap_labeler
+│   ├── model.pkl
+│   ├── pseudo_label_map.tif
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
+├── agent_output/                ← diisi setiap minggu
+│   ├── health_map_COG_20240701.tif
+│   ├── pie_chart_20240701.png
+│   └── stats_20240701.json
+├── gee_vi_export_madiun.js
+├── gee_vi_export_madiun_auto.py
+├── bootstrap_labeler_rf_trainer.py
+├── weekly_agent_pipeline.py     ← dijalankan cron
+└── streamlit_viewer.py          ← deploy ke Streamlit Cloud
+
+
+Setup Telegram (2 langkah):
+
+Chat @BotFather di Telegram → /newbot → dapat BOT_TOKEN
+Tambahkan bot ke grup manajemen → chat @userinfobot → dapat CHAT_ID
+
+Lalu set environment variable sebelum run:
+export TELEGRAM_BOT_TOKEN="12345:ABCxxx"
+export TELEGRAM_CHAT_ID="-100xxxxxxx"
+python weekly_agent_pipeline.py
+
+Deploy Streamlit viewer:
+Upload streamlit_viewer.py ke repo GitHub, lalu connect ke share.streamlit.io — gratis, langsung dapat URL publik. Password default di script adalah lppagro2025, ubah di baris APP_PASSWORD sebelum deploy.
+
+pip install -r requirements.txt
+# 1. Pastikan GeoTIFF dari GEE sudah ada di GEE_LPP_MADIUN/
+python bootstrap_labeler_rf_trainer.py   # ~5–10 menit
+python weekly_agent_pipeline.py          # ~5–15 menit
+streamlit run streamlit_viewer.py        # buka browser

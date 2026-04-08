@@ -1,0 +1,39 @@
+{
+  "Sehat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5000.0
+  },
+  "Stres_Ringan": {
+    "precision": 0.9986019572598362,
+    "recall": 1.0,
+    "f1-score": 0.9993004896572399,
+    "support": 5000.0
+  },
+  "Stres_Berat": {
+    "precision": 1.0,
+    "recall": 0.9983017952450267,
+    "f1-score": 0.9991501760349641,
+    "support": 4122.0
+  },
+  "Kritis": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5000.0
+  },
+  "accuracy": 0.9996339295052818,
+  "macro avg": {
+    "precision": 0.999650489314959,
+    "recall": 0.9995754488112567,
+    "f1-score": 0.999612666423051,
+    "support": 19122.0
+  },
+  "weighted avg": {
+    "precision": 0.9996344412874795,
+    "recall": 0.9996339295052818,
+    "f1-score": 0.9996339019925907,
+    "support": 19122.0
+  }
+}
