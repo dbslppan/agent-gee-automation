@@ -57,7 +57,7 @@ CONFIG = {
     "telegram_chat_id"  : os.getenv("TELEGRAM_CHAT_ID",  "-1003840524953"),
 
     # === STREAMLIT VIEWER ===
-    "viewer_url": "https://lpp-agro-kebun.streamlit.app",
+    "viewer_url": "https://lppagro-kebun.streamlit.app",
 
     # === PROCESSING ===
     "chunk_size": 2048,
