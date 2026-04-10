@@ -1,0 +1,259 @@
+2026-04-08 14:18:01,536 [INFO] ============================================================
+2026-04-08 14:18:01,537 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 14:18:01,537 [INFO] Run time: 2026-04-08 14:18:01
+2026-04-08 14:18:01,538 [INFO] ============================================================
+2026-04-08 14:18:01,541 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-08 14:18:01,542 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-08 14:18:01,542 [INFO] Loading model: ./model_output/model.pkl
+2026-04-08 14:18:32,065 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-08 14:58:43,018 [INFO] ============================================================
+2026-04-08 14:58:43,019 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 14:58:43,020 [INFO] Run time: 2026-04-08 14:58:43
+2026-04-08 14:58:43,020 [INFO] ============================================================
+2026-04-08 14:58:43,022 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-08 14:58:43,022 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-08 14:58:43,023 [INFO] Loading model: ./model_output/model.pkl
+2026-04-08 14:58:47,154 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-08 14:59:51,344 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-08 14:59:51,801 [INFO] Colorizing prediction raster...
+2026-04-08 14:59:52,147 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260408.tif
+2026-04-08 14:59:53,402 [INFO] COG saved: agent_output\health_map_COG_20260408.tif
+2026-04-08 14:59:53,414 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-08 14:59:53,503 [INFO]   Sehat          :      0.0 ha  (0.9%)
+2026-04-08 14:59:53,527 [INFO]   Stres Ringan   :      0.0 ha  (0.1%)
+2026-04-08 14:59:53,551 [INFO]   Stres Berat    :      0.0 ha  (0.0%)
+2026-04-08 14:59:53,575 [INFO]   Kritis         :      0.0 ha  (99.0%)
+2026-04-08 15:35:40,062 [INFO] ============================================================
+2026-04-08 15:35:40,063 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 15:35:40,064 [INFO] Run time: 2026-04-08 15:35:40
+2026-04-08 15:35:40,064 [INFO] ============================================================
+2026-04-08 15:35:40,065 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-08 15:35:40,066 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-08 15:35:40,066 [INFO] Loading model: ./model_output/model.pkl
+2026-04-08 15:35:44,443 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-08 15:36:49,077 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-08 15:36:49,128 [INFO] Colorizing prediction raster...
+2026-04-08 15:36:49,535 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260408.tif
+2026-04-08 15:36:50,724 [INFO] COG saved: agent_output\health_map_COG_20260408.tif
+2026-04-08 15:36:50,734 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-08 15:36:50,820 [INFO]   Sehat          :   1465.8 ha  (0.9%)
+2026-04-08 15:36:50,844 [INFO]   Stres Ringan   :    130.7 ha  (0.1%)
+2026-04-08 15:36:50,867 [INFO]   Stres Berat    :     42.6 ha  (0.0%)
+2026-04-08 15:36:50,892 [INFO]   Kritis         : 164573.1 ha  (99.0%)
+2026-04-08 15:36:51,702 [INFO] Pie chart saved: agent_output\pie_chart_20260408.png
+2026-04-08 15:36:51,704 [INFO] 
+[Step 5] Kirim notifikasi Telegram...
+2026-04-08 15:36:57,077 [INFO] Telegram text message sent OK
+2026-04-08 15:37:05,131 [INFO] Telegram chart photo sent OK
+2026-04-08 15:37:05,138 [INFO] 
+============================================================
+2026-04-08 15:37:05,139 [INFO] Pipeline selesai dalam 85.1 detik
+2026-04-08 15:37:05,139 [INFO] Output tersimpan di: agent_output/
+2026-04-08 15:37:05,146 [INFO] ============================================================
+2026-04-08 16:20:27,616 [INFO] ============================================================
+2026-04-08 16:20:27,616 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 16:20:27,617 [INFO] Run time: 2026-04-08 16:20:27
+2026-04-08 16:20:27,617 [INFO] ============================================================
+2026-04-08 16:20:27,619 [INFO] Semua file sudah diproses sebelumnya. Tidak ada yang baru.
+2026-04-08 16:20:27,619 [INFO] Tidak ada file baru. Pipeline selesai.
+2026-04-08 16:20:36,170 [INFO] ============================================================
+2026-04-08 16:20:36,171 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 16:20:36,171 [INFO] Run time: 2026-04-08 16:20:36
+2026-04-08 16:20:36,171 [INFO] ============================================================
+2026-04-08 16:20:36,172 [INFO] Semua file sudah diproses sebelumnya. Tidak ada yang baru.
+2026-04-08 16:20:36,173 [INFO] Tidak ada file baru. Pipeline selesai.
+2026-04-08 16:22:29,212 [INFO] ============================================================
+2026-04-08 16:22:29,213 [INFO] SENTINEL-KEBUN Agent — Pipeline Mingguan
+2026-04-08 16:22:29,213 [INFO] Run time: 2026-04-08 16:22:29
+2026-04-08 16:22:29,213 [INFO] ============================================================
+2026-04-08 16:22:29,214 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-08 16:22:29,215 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-08 16:22:29,215 [INFO] Loading model: ./model_output/model.pkl
+2026-04-08 16:22:32,982 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-08 16:22:37,886 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-08 16:22:37,930 [INFO] Colorizing prediction raster...
+2026-04-08 16:22:38,691 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260408.tif
+2026-04-08 16:22:39,802 [INFO] COG saved: agent_output\health_map_COG_20260408.tif
+2026-04-08 16:22:39,813 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-08 16:22:39,899 [INFO]   Sehat          :   1465.8 ha  (89.4%)
+2026-04-08 16:22:39,921 [INFO]   Stres Ringan   :    130.7 ha  (8.0%)
+2026-04-08 16:22:39,945 [INFO]   Stres Berat    :     42.6 ha  (2.6%)
+2026-04-08 16:22:39,967 [INFO]   Kritis         :      0.0 ha  (0.0%)
+2026-04-08 16:22:40,719 [INFO] Pie chart saved: agent_output\pie_chart_20260408.png
+2026-04-08 16:22:40,723 [INFO] 
+[Step 5] Kirim notifikasi Telegram...
+2026-04-08 16:22:45,785 [INFO] Telegram text message sent OK
+2026-04-08 16:22:47,841 [INFO] Telegram chart photo sent OK
+2026-04-08 16:22:47,847 [INFO] 
+============================================================
+2026-04-08 16:22:47,847 [INFO] Pipeline selesai dalam 18.6 detik
+2026-04-08 16:22:47,847 [INFO] Output tersimpan di: agent_output/
+2026-04-08 16:22:47,854 [INFO] ============================================================
+2026-04-09 11:44:33,280 [INFO] ============================================================
+2026-04-09 11:44:33,281 [INFO] SENTINEL-KEBUN Agent - Pipeline Mingguan
+2026-04-09 11:44:33,281 [INFO] Run time: 2026-04-09 11:44:33
+2026-04-09 11:44:33,282 [INFO] Kelas aktif: ['Sehat', 'Sedang', 'Stres']
+2026-04-09 11:44:33,282 [INFO] ============================================================
+2026-04-09 11:44:33,284 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-09 11:44:33,284 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 11:44:33,285 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 11:44:38,719 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-09 11:44:44,845 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 11:44:44,861 [INFO] 
+[Step 3] Colorize -> Cloud Optimized GeoTIFF...
+2026-04-09 11:44:44,861 [INFO] Colorizing prediction raster...
+2026-04-09 11:44:45,972 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260409.tif
+2026-04-09 11:44:47,651 [INFO] COG saved: agent_output\health_map_COG_20260409.tif
+2026-04-09 11:44:47,665 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-09 11:44:47,829 [INFO]   Sehat     :   1562.7 ha  (95.3%)
+2026-04-09 11:44:47,866 [INFO]   Sedang    :     76.4 ha  (4.7%)
+2026-04-09 11:44:47,909 [INFO]   Stres     :      0.0 ha  (0.0%)
+2026-04-09 11:44:48,861 [INFO] Pie chart saved: agent_output\pie_chart_20260409.png
+2026-04-09 11:44:48,864 [INFO] 
+[Step 5] Kirim notifikasi Telegram...
+2026-04-09 11:44:49,905 [INFO] Telegram text message sent OK
+2026-04-09 11:44:51,920 [INFO] Telegram chart photo sent OK
+2026-04-09 11:44:51,929 [INFO] 
+============================================================
+2026-04-09 11:44:51,930 [INFO] Pipeline selesai dalam 18.6 detik
+2026-04-09 11:44:51,931 [INFO] Output tersimpan di: agent_output/
+2026-04-09 11:44:51,932 [INFO]   health_map_COG_20260409.tif  -> upload ke hosting/Streamlit
+2026-04-09 11:44:51,933 [INFO]   pie_chart_20260409.png        -> sudah dikirim ke Telegram
+2026-04-09 11:44:51,933 [INFO]   stats_20260409.json           -> dibaca oleh Streamlit viewer
+2026-04-09 11:44:51,934 [INFO] ============================================================
+2026-04-09 13:14:04,112 [INFO] ============================================================
+2026-04-09 13:14:04,113 [INFO] SENTINEL-KEBUN Agent v2 — Pipeline Mingguan (3 Kelas)
+2026-04-09 13:14:04,114 [INFO] Kelas: Sehat, Sedang, Stres
+2026-04-09 13:14:04,114 [INFO] Run : 2026-04-09 13:14:04
+2026-04-09 13:14:04,114 [INFO] ============================================================
+2026-04-09 13:14:04,118 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-09 13:14:04,118 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 13:14:04,119 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 13:14:08,241 [INFO] Raster: 5009x3357 px — proses per chunk 2048px
+2026-04-09 13:14:54,363 [INFO] ============================================================
+2026-04-09 13:14:54,363 [INFO] SENTINEL-KEBUN Agent - Pipeline Mingguan
+2026-04-09 13:14:54,364 [INFO] Run time: 2026-04-09 13:14:54
+2026-04-09 13:14:54,364 [INFO] Kelas aktif: ['Sehat', 'Sedang', 'Stres']
+2026-04-09 13:14:54,364 [INFO] ============================================================
+2026-04-09 13:14:54,365 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-09 13:14:54,365 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 13:14:54,365 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 13:14:57,411 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-09 13:15:01,109 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 13:15:01,123 [INFO] 
+[Step 3] Colorize -> Cloud Optimized GeoTIFF...
+2026-04-09 13:15:01,123 [INFO] Colorizing prediction raster...
+2026-04-09 13:15:02,114 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260409.tif
+2026-04-09 13:15:03,920 [INFO] COG saved: agent_output\health_map_COG_20260409.tif
+2026-04-09 13:15:03,937 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-09 13:15:04,079 [INFO]   Sehat     :      0.0 ha  (0.0%)
+2026-04-09 13:15:04,134 [INFO]   Sedang    :   1637.2 ha  (99.9%)
+2026-04-09 13:15:04,175 [INFO]   Stres     :      1.9 ha  (0.1%)
+2026-04-09 13:15:05,011 [INFO] Pie chart saved: agent_output\pie_chart_20260409.png
+2026-04-09 13:15:05,015 [INFO] 
+[Step 5] Kirim notifikasi Telegram...
+2026-04-09 13:15:06,024 [INFO] Telegram text message sent OK
+2026-04-09 13:15:08,122 [INFO] Telegram chart photo sent OK
+2026-04-09 13:15:08,133 [INFO] 
+============================================================
+2026-04-09 13:15:08,133 [INFO] Pipeline selesai dalam 13.8 detik
+2026-04-09 13:15:08,134 [INFO] Output tersimpan di: agent_output/
+2026-04-09 13:15:08,134 [INFO]   health_map_COG_20260409.tif  -> upload ke hosting/Streamlit
+2026-04-09 13:15:08,135 [INFO]   pie_chart_20260409.png        -> sudah dikirim ke Telegram
+2026-04-09 13:15:08,135 [INFO]   stats_20260409.json           -> dibaca oleh Streamlit viewer
+2026-04-09 13:15:08,135 [INFO] ============================================================
+2026-04-09 13:59:01,372 [INFO] ============================================================
+2026-04-09 13:59:01,373 [INFO] SENTINEL-KEBUN Agent v3 — Pipeline Mingguan
+2026-04-09 13:59:01,374 [INFO] Kelas: Sehat, Sedang, Stres
+2026-04-09 13:59:01,374 [INFO] Run : 2026-04-09 13:59:01
+2026-04-09 13:59:01,375 [INFO] ============================================================
+2026-04-09 13:59:01,376 [INFO] File baru: pred_S2_VI_Madiun_20260409.tif
+2026-04-09 13:59:01,376 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 13:59:01,376 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 13:59:04,028 [INFO] Feature order: ['NDVI', 'GNDVI', 'SAVI', 'RVI', 'EVI']
+2026-04-09 13:59:04,089 [INFO] Raster: 5009x3357 px, 12 bands
+2026-04-09 13:59:04,089 [WARNING] NDVI tidak ditemukan dari description. Fallback by range...
+2026-04-09 13:59:04,177 [INFO] Mode: direct | Band positions: {'NDVI': 1, 'GNDVI': 2, 'SAVI': 3, 'RVI': 4, 'EVI': 5}
+2026-04-09 13:59:36,686 [INFO]   Progress: 100% (6/6)
+2026-04-09 13:59:36,767 [INFO] Prediction saved: agent_output\pred_pred_S2_VI_Madiun_20260409.tif
+2026-04-09 13:59:36,840 [INFO]   Sehat     :        0 px (0.0%)
+2026-04-09 13:59:36,871 [INFO]   Sedang    :    6,736 px (0.0%)
+2026-04-09 13:59:36,898 [INFO]   Stres     : 16,808,477 px (100.0%)
+2026-04-09 13:59:38,656 [INFO] RGB: agent_output\health_map_rgb_20260409.tif
+2026-04-09 13:59:38,657 [INFO] COG: agent_output\health_map_COG_20260409.tif
+2026-04-09 13:59:38,675 [INFO] 
+[Step 4] Statistik...
+2026-04-09 13:59:38,877 [INFO]   Sehat     :      0.0 ha (0.0%)
+2026-04-09 13:59:38,913 [INFO]   Sedang    :      0.0 ha (0.0%)
+2026-04-09 13:59:38,946 [INFO]   Stres     :      0.0 ha (100.0%)
+2026-04-09 14:07:33,376 [INFO] ============================================================
+2026-04-09 14:07:33,377 [INFO] SENTINEL-KEBUN Agent v3 — Pipeline Mingguan
+2026-04-09 14:07:33,377 [INFO] Kelas: Sehat, Sedang, Stres
+2026-04-09 14:07:33,378 [INFO] Run : 2026-04-09 14:07:33
+2026-04-09 14:07:33,378 [INFO] ============================================================
+2026-04-09 14:07:33,380 [INFO] File baru: pred_S2_VI_Madiun_20260409.tif
+2026-04-09 14:07:33,380 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 14:07:33,380 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 14:07:37,240 [INFO] Feature order: ['NDVI', 'GNDVI', 'SAVI', 'RVI', 'EVI']
+2026-04-09 14:07:37,369 [INFO] Raster: 5009x3357 px, 12 bands
+2026-04-09 14:07:37,370 [INFO] Mode: compute VI dari spektral | B2=2, B3=3, B4=4, B8=8
+2026-04-09 14:08:24,094 [INFO]   Progress: 100% (6/6)
+2026-04-09 14:08:24,366 [INFO] Prediction saved: agent_output\pred_pred_S2_VI_Madiun_20260409.tif
+2026-04-09 14:08:24,443 [INFO]   Sehat     :        0 px (0.0%)
+2026-04-09 14:08:24,473 [INFO]   Sedang    :  184,232 px (1.1%)
+2026-04-09 14:08:24,506 [INFO]   Stres     : 16,630,981 px (98.9%)
+2026-04-09 14:08:27,222 [INFO] RGB: agent_output\health_map_rgb_20260409.tif
+2026-04-09 14:08:27,222 [INFO] COG: agent_output\health_map_COG_20260409.tif
+2026-04-09 14:08:27,235 [INFO] 
+[Step 4] Statistik...
+2026-04-09 14:08:27,372 [INFO]   Sehat     :      0.0 ha (0.0%)
+2026-04-09 14:08:27,430 [INFO]   Sedang    :      0.0 ha (1.1%)
+2026-04-09 14:08:27,481 [INFO]   Stres     :      0.0 ha (98.9%)
+2026-04-09 14:17:58,913 [INFO] ============================================================
+2026-04-09 14:17:58,913 [INFO] SENTINEL-KEBUN Agent - Pipeline Mingguan
+2026-04-09 14:17:58,914 [INFO] Run time: 2026-04-09 14:17:58
+2026-04-09 14:17:58,914 [INFO] Kelas aktif: ['Sehat', 'Sedang', 'Stres']
+2026-04-09 14:17:58,914 [INFO] ============================================================
+2026-04-09 14:17:58,916 [INFO] File baru ditemukan: S2_VI_Madiun_VI_Median.tif
+2026-04-09 14:17:58,916 [INFO] 
+[Step 2] Inferensi Random Forest...
+2026-04-09 14:17:58,916 [INFO] Loading model: ./model_output/model.pkl
+2026-04-09 14:18:01,977 [INFO] Memproses raster 5009x3357 piksel...
+2026-04-09 14:18:05,351 [INFO] Prediction raster saved: agent_output\pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 14:18:05,362 [INFO] 
+[Step 3] Colorize -> Cloud Optimized GeoTIFF...
+2026-04-09 14:18:05,362 [INFO] Colorizing prediction raster...
+2026-04-09 14:18:06,266 [INFO] RGB GeoTIFF saved: agent_output\health_map_rgb_20260409.tif
+2026-04-09 14:18:07,691 [INFO] COG saved: agent_output\health_map_COG_20260409.tif
+2026-04-09 14:18:07,703 [INFO] 
+[Step 4] Hitung statistik luas per kelas...
+2026-04-09 14:18:07,807 [INFO]   Sehat     :   1562.7 ha  (95.3%)
+2026-04-09 14:18:07,839 [INFO]   Sedang    :     76.4 ha  (4.7%)
+2026-04-09 14:18:07,875 [INFO]   Stres     :      0.0 ha  (0.0%)
+2026-04-09 14:18:08,453 [INFO] Pie chart saved: agent_output\pie_chart_20260409.png
+2026-04-09 14:18:08,458 [INFO] 
+[Step 5] Kirim notifikasi Telegram...
+2026-04-09 14:18:09,443 [INFO] Telegram text message sent OK
+2026-04-09 14:18:11,068 [INFO] Telegram chart photo sent OK
+2026-04-09 14:18:11,078 [INFO] 
+============================================================
+2026-04-09 14:18:11,078 [INFO] Pipeline selesai dalam 12.2 detik
+2026-04-09 14:18:11,079 [INFO] Output tersimpan di: agent_output/
+2026-04-09 14:18:11,079 [INFO]   health_map_COG_20260409.tif  -> upload ke hosting/Streamlit
+2026-04-09 14:18:11,080 [INFO]   pie_chart_20260409.png        -> sudah dikirim ke Telegram
+2026-04-09 14:18:11,081 [INFO]   stats_20260409.json           -> dibaca oleh Streamlit viewer
+2026-04-09 14:18:11,082 [INFO] ============================================================

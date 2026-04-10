@@ -1,0 +1,29 @@
+{
+  "date": "20260409",
+  "resolution_m": 9.9,
+  "crs": "EPSG:4326",
+  "classes": {
+    "Sehat": {
+      "class_id": 1,
+      "pixel_count": 157916,
+      "area_ha": 1562.69,
+      "percentage": 95.34,
+      "color_hex": "#2ecc40"
+    },
+    "Sedang": {
+      "class_id": 2,
+      "pixel_count": 7717,
+      "area_ha": 76.37,
+      "percentage": 4.66,
+      "color_hex": "#ffdc00"
+    },
+    "Stres": {
+      "class_id": 3,
+      "pixel_count": 0,
+      "area_ha": 0.0,
+      "percentage": 0.0,
+      "color_hex": "#e74c3c"
+    }
+  },
+  "total_valid_ha": 1639.05
+}

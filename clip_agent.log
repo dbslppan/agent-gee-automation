@@ -1,0 +1,64 @@
+2026-04-09 11:47:38,843 [INFO] ============================================================
+2026-04-09 11:47:38,844 [INFO] Clip & Tile Agent — LPP Agro Nusantara
+2026-04-09 11:47:38,844 [INFO] ============================================================
+2026-04-09 11:47:38,848 [WARNING] Tidak bisa ekstrak tanggal dari: pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 11:47:38,848 [WARNING] Tidak ada pasangan yang cocok ditemukan.
+Pastikan nama file mengandung tanggal dan nama area yang sama.
+Contoh:
+  TIFF  : pred_S2_VI_Madiun_20260408.tif
+  Shapefile: poligon_madiun_20260408.shp
+2026-04-09 11:47:38,849 [ERROR] Tidak ada pasangan file yang cocok. Pipeline dihentikan.
+2026-04-09 13:24:25,068 [INFO] ============================================================
+2026-04-09 13:24:25,069 [INFO] Clip & Tile Agent — LPP Agro Nusantara
+2026-04-09 13:24:25,070 [INFO] ============================================================
+2026-04-09 13:24:25,071 [INFO] TIFF  : pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 13:24:25,072 [INFO] SHP   : sk12.shp
+2026-04-09 13:24:26,151 [ERROR] Gagal baca shapefile: Unable to open shapefiles\sk12.shx or shapefiles\sk12.SHX. Set SHAPE_RESTORE_SHX config option to YES to restore or create it.
+2026-04-09 13:36:43,789 [INFO] ============================================================
+2026-04-09 13:36:43,790 [INFO] Clip & Tile Agent — LPP Agro Nusantara
+2026-04-09 13:36:43,791 [INFO] ============================================================
+2026-04-09 13:36:43,793 [INFO] TIFF  : pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 13:36:43,794 [INFO] SHP   : sk12.shp
+2026-04-09 13:36:44,219 [WARNING] Kolom 'LahanID' tidak ditemukan.
+2026-04-09 13:36:44,220 [WARNING] Kolom tersedia: ['geometry']
+2026-04-09 13:36:44,220 [WARNING] Menggunakan index sebagai lahan_id.
+2026-04-09 13:36:44,226 [INFO] Jumlah poligon : 2727
+2026-04-09 13:36:44,227 [INFO] Kolom tersedia : ['geometry', 'LahanID']
+2026-04-09 14:26:26,182 [INFO] ============================================================
+2026-04-09 14:26:26,183 [INFO] Clip & Tile Agent â€” LPP Agro Nusantara
+2026-04-09 14:26:26,183 [INFO] ============================================================
+2026-04-09 14:26:26,185 [INFO] TIFF  : pred_S2_VI_Madiun_VI_Median.tif
+2026-04-09 14:26:26,186 [INFO] Vektor: mumbul.gpkg
+2026-04-09 14:26:26,308 [INFO] Pixel area: 0.009896 ha/piksel
+2026-04-09 14:26:26,693 [INFO] Membaca layer GPKG: 'sk12'
+2026-04-09 14:26:27,187 [INFO]   2727 fitur | CRS: EPSG:4326
+2026-04-09 14:26:27,188 [INFO]   Kolom: ['PABRIK_GUL', 'NO_KONTRAK', 'KODE_PETAK', 'MASA_TANAM', 'PERMOHONAN', 'ACCEPT_ID', 'STATUS', 'DESA_ID', 'AREA_ID', 'LahanID', 'PabrikGula', 'Afdeling', 'afedling_i', 'afdelingMa', 'NamaKebun', 'LuasHa', 'LuasTanam', 'TahunTanam', 'BulanTanam', 'JenisKateg', 'JenisTebu', 'Kategori', 'PetaniID', 'NamaPetani', 'JenisTanah', 'KondisiAre', 'IDVarietas', 'Varietas', 'IDKoperasi', 'NamaKopera', 'NoKontrak', 'geometry']
+2026-04-09 14:26:27,197 [INFO] Clip + statistik: 2727 poligon...
+2026-04-09 14:26:27,687 [INFO]   Progress: 200/2727
+2026-04-09 14:26:28,276 [INFO]   Progress: 400/2727
+2026-04-09 14:26:28,529 [INFO]   Progress: 500/2727
+2026-04-09 14:26:29,072 [INFO]   Progress: 700/2727
+2026-04-09 14:26:30,638 [INFO]   Progress: 1300/2727
+2026-04-09 14:26:30,872 [INFO]   Progress: 1400/2727
+2026-04-09 14:26:31,479 [INFO]   Progress: 1700/2727
+2026-04-09 14:26:31,761 [INFO]   Progress: 1800/2727
+2026-04-09 14:26:32,003 [INFO]   Progress: 1900/2727
+2026-04-09 14:26:32,235 [INFO]   Progress: 2000/2727
+2026-04-09 14:26:33,083 [INFO]   Progress: 2400/2727
+2026-04-09 14:26:33,282 [INFO]   Progress: 2500/2727
+2026-04-09 14:26:33,552 [INFO]   Progress: 2600/2727
+2026-04-09 14:26:33,779 [INFO]   Progress: 2700/2727
+2026-04-09 14:26:33,868 [INFO] Statistik selesai: 1180/2727 poligon valid
+2026-04-09 14:26:34,617 [INFO] Created 2,727 records
+2026-04-09 14:26:34,619 [INFO] GeoJSON saved: clip_output\health_mumbul_20260409.geojson (3558 KB)
+2026-04-09 14:26:34,623 [INFO] 
+Ringkasan mumbul 20260409:
+2026-04-09 14:26:34,625 [INFO]   Sehat     : 1,402.4 ha total
+2026-04-09 14:26:34,626 [INFO]   Sedang    : 69.7 ha total
+2026-04-09 14:26:34,627 [INFO]   Stres     : 0.0 ha total
+2026-04-09 14:26:34,627 [INFO] 
+============================================================
+2026-04-09 14:26:34,628 [INFO] Clip Agent selesai.
+2026-04-09 14:26:34,628 [INFO] Output: clip_output/
+2026-04-09 14:26:34,628 [INFO]   health_mumbul_20260409.geojson -> buka di streamlit_viewer_v2.py
+2026-04-09 14:26:34,628 [INFO] ============================================================

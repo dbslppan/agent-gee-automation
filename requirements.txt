@@ -10,3 +10,5 @@ Pillow
 rasterio
 pyproj
 shapely
+
+geopandas
